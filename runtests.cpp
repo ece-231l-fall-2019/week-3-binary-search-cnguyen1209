@@ -23,7 +23,8 @@ int main()
 {
 	std::vector<int> numbers;
 	std::vector<int> search;
-
+	numbers.reserve(1000000);
+	search.reserve(2000);
 	readFile("numbers", numbers);
 	readFile("search", search);
 
@@ -83,6 +84,20 @@ int main()
 		std::cout << "Found "<< found << "/"
 			<< search.size() << " values." << std::endl;
 	}
+
+	/*{
+		Timer timer("Time to binary search all values (recursive): ");
+
+		int found = 0;
+		for (size_t i = 0; i < search.size(); i++)
+		{
+			if (binarySearchRecursive(numbers.data(), numbers.data() + numbers.size(), search[i]))
+				found++;
+		}
+
+		std::cout << "Found "<< found << "/"
+			<< search.size() << " values." << std::endl;
+	}*/
 
 	return 0;
 }
