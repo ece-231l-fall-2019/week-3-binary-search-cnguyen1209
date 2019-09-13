@@ -3,9 +3,10 @@
 ### Linear Search and Binary Search
 
 A linear search is a method for finding an element within a list. It sequentially checks each element of the list until a match is found or the whole list has been searched.
+
 Advantage of linear search:
 
-- very simplicity
+- Very simplicity
 
 - It can operate sort and unsort array
 
@@ -35,30 +36,37 @@ Disadvantage of binary search:
 
 #### The code is run with debugging symbols -g
 
-| Algorithm | Time |
+| Algorithm | Time (seconds) |
 
-| --------- | ---- |
+| --------- | -------------- |
 
 | Linear Search (no pointers) | 1.58432s |
 
-| Linear Search (with pointers) | 1.24938s |
+| Linear Search (pointers) | 1.24938s |
 
 | Binary Search (no pointers) | 0.000352835s |
 
-| Binary Search (With pointers) | 0.00025769s |
+| Binary Search (pointers) | 0.00025769s |
 
 #### The code is run with optimizations
 
-| Search Method | Values Found | Time |
+| Algorithm | Time (seconds) |
 
-| ------------- | ------------ | ----------------- |
+| --------- | -------------- |
 
-| Linear Search (no pointers) | 237 | 0.947122s |
+| Linear Search (no pointers) | 0.947122s |
 
-| Linear Search (with pointers) | 237 | 0.698641s |
+| Linear Search (pointers) | 0.698641s |
 
-| Binary Search (no pointers) | 237 | 0.00027816s |
+| Binary Search (no pointers) | 0.00027816s |
 
-| Binary Search (with pointers) | 237 | 0.0002238876s |
+| Binary Search (pointers) | 0.0002238876s |
 
 
+#### Conclusion
+
+Comparing between Linear Search and Binary Search, Binary Search always works faster based on the above advantages.
+Generally, functions that use pointers will always be faster.
+Because when using the cursor, the function does not have to make a copy of each parameter and when it needs to change, it only needs to change the value stored at the address.
+Besides, The code which is run with optimizations is faster thatn the code is run with debugging symbols -g.
+The optimizations rearrange and execute the program in a more logical way with the computer, which makes the algorithm faster to handle.
