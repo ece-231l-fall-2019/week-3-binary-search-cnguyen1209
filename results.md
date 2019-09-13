@@ -2,7 +2,7 @@
 
 ### Linear Search and Binary Search
 
-A linear search is a method for finding an element within a list. It sequentially checks each element of the list until a match is found or the whole list has been searched.
+**A linear search** is a method for finding an element within a list. It sequentially checks each element of the list until a match is found or the whole list has been searched.
 
 Advantage of linear search:
 
@@ -15,7 +15,7 @@ Disadvantage of linear search:
 - Time taken to search elements keep increasing as the number of elements are increased.
 
 
-Binary search is a search algorithm that finds the position of a target value within a sorted array.
+**Binary search** is a search algorithm that finds the position of a target value within a sorted array.
 Binary search compares the target value to the middle element of the array.
 If they are not equal, the half in which the target cannot lie is eliminated and the search continues on the remaining half, again taking the middle element to compare to the target value, and repeating this until the target value is found.
 
@@ -56,5 +56,5 @@ Disadvantage of binary search:
 Comparing between Linear Search and Binary Search, Binary Search always works faster because the Search is done to either half of the given list which means every time the code run, the search area is reducing.
 Generally, functions that use pointers will always be faster.
 Because when using the cursor, the function does not have to make a copy of each parameter and when it needs to change, it only needs to change the value stored at the address.
-Besides, The code which is run with optimizations is faster thatn the code is run with debugging symbols -g.
+Besides, The code which is run with optimizations is faster that the code is run with debugging symbols -g.
 The optimizations rearrange and execute the program in a more logical way with the computer, which makes the algorithm faster to handle.
