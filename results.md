@@ -51,9 +51,9 @@ Disadvantage of binary search:
 | Binary Search (no pointers) | 0.00027816s |
 | Binary Search (pointers) | 0.0002238876s |
 
-#### Conclusion
+### Conclusion
 
-Comparing between Linear Search and Binary Search, Binary Search always works faster because the Search is done to either half of the given list.
+Comparing between Linear Search and Binary Search, Binary Search always works faster because the Search is done to either half of the given list which means every time the code run, the search area is reducing.
 Generally, functions that use pointers will always be faster.
 Because when using the cursor, the function does not have to make a copy of each parameter and when it needs to change, it only needs to change the value stored at the address.
 Besides, The code which is run with optimizations is faster thatn the code is run with debugging symbols -g.
