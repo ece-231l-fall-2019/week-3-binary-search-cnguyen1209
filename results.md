@@ -39,7 +39,7 @@ Disadvantage of binary search:
 
 | Search Method | Values Found | Time (in seconds) |
 
-| ------------- | ------------ | ----------------- |
+| ------------- |:------------:| -----------------:|
 
 | Linear Search (no pointers) | 237 | 1.58432s |
 
