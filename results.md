@@ -30,6 +30,7 @@ Disadvantage of binary search:
 
 - Overkill for very small numbers of elements
 
+
 ### Difference in execution time of linear vs. binary searches:
 
 #### The code is run with debugging symbols -g
