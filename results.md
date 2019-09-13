@@ -35,17 +35,21 @@ Disadvantage of binary search:
 
 #### The code is run with debugging symbols -g
 
+---------------------------------------------------
+
 | Search Method | Values Found | Time (in seconds) |
 
 | ------------- | ------------ | ----------------- |
 
-Linear Search (no pointers) | 237 | 1.58432s |
+|Linear Search (no pointers) | 237 | 1.58432s |
 
-Linear Search (with pointers) | 237 | 1.24938s |
+|Linear Search (with pointers) | 237 | 1.24938s |
 
-Binary Search (no pointers) | 237 | 0.000352835s |
+|Binary Search (no pointers) | 237 | 0.000352835s |
 
-Binary Search (with pointers) | 237 | 0.00025769s |
+|Binary Search (with pointers) | 237 | 0.00025769s |
+
+---------------------------------------------------
 
 #### The code is run with optimizations
 
@@ -53,12 +57,12 @@ Binary Search (with pointers) | 237 | 0.00025769s |
 
 | ------------- | ------------ | ----------------- |
 
-Linear Search (no pointers) | 237 | 0.947122s |
+|Linear Search (no pointers) | 237 | 0.947122s |
 
-Linear Search (with pointers) | 237 | 0.698641s |
+|Linear Search (with pointers) | 237 | 0.698641s |
 
-Binary Search (no pointers) | 237 | 0.00027816s |
+|Binary Search (no pointers) | 237 | 0.00027816s |
 
-Binary Search (with pointers) | 237 | 0.0002238876s |
+|Binary Search (with pointers) | 237 | 0.0002238876s |
 
 
