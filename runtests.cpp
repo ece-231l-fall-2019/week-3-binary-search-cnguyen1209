@@ -3,6 +3,7 @@
 #include <vector>
 #include "Timer.h"
 #include "search.h"
+#include "sort.h"
 using namespace std;
 
 void readFile(string filename, vector<int>& set)
@@ -19,6 +20,17 @@ void readFile(string filename, vector<int>& set)
 	fin.close();
 }
 
+void writeFile(string filename, vector<int>& set)
+{
+	ofstream fout(filename);
+
+  for (int i = 0 ; i < 2000; i++)
+	{
+			fout << set[i] << endl;
+	}
+	fout.close();
+}
+
 int main()
 {
 	std::vector<int> numbers;
@@ -27,6 +39,9 @@ int main()
 	search.reserve(2000);
 	readFile("numbers", numbers);
 	readFile("search", search);
+
+	bubblesort(search.data(), search.data() + search.size());
+	writeFile("searchsorted", search);
 
 	{
 		Timer timer("Time to linear search all values: ");
@@ -85,7 +100,7 @@ int main()
 			<< search.size() << " values." << std::endl;
 	}
 
-	/*{
+	{
 		Timer timer("Time to binary search all values (recursive): ");
 
 		int found = 0;
@@ -97,7 +112,7 @@ int main()
 
 		std::cout << "Found "<< found << "/"
 			<< search.size() << " values." << std::endl;
-	}*/
+	}
 
 	return 0;
 }
