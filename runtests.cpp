@@ -24,7 +24,7 @@ void writeFile(string filename, vector<int>& set)
 {
 	ofstream fout(filename);
 
-  for (int i = 0 ; i < 2000; i++)
+  for (unsigned int i = 0 ; i < set.size(); i++)
 	{
 			fout << set[i] << endl;
 	}
