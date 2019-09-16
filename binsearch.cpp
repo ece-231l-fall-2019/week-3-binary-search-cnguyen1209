@@ -22,20 +22,25 @@ bool binarySearch(const int *begin, const int *end, int value)
 {
 		while (begin <= end)
 		{
+			if ((begin > end) || (begin == end))
+				return false;
+
 			const int *mid = begin + (end - begin)/2;
 
 			if (*mid == value)
 				return true;
 			else if (*mid < value)
-					begin = mid + 1;
+					begin = ++mid;
 			else if (*mid > value)
-					end = mid - 1;
+					end = mid;
 		}
 	return false;
 }
 
 bool binarySearchRecursive(const int *begin, const int *end, int value)
 {
+		if ((begin > end) || (begin == end))
+			return false;
 		if ((end - begin) == 1)
 		{
 				if (*begin == value)
@@ -44,14 +49,14 @@ bool binarySearchRecursive(const int *begin, const int *end, int value)
 					return true;
 				else return false;
 		}
-		const int *mid = begin + (end - begin)/2;
+		const int *mid = begin + (end - begin) / 2;
 
 		if (*mid == value)
 			return true;
 		if (*mid < value)
-			return binarySearchRecursive(mid++, end, value);
+			return binarySearchRecursive(++mid, end, value);
 		else if (*mid > value)
-			return binarySearchRecursive(begin, mid--, value);
+			return binarySearchRecursive(begin, mid, value);
 
 		return false;
 }
