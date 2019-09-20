@@ -1,5 +1,6 @@
 #include <vector>
 #include "sort.h"
+using namespace std;
 void swap(int *a, int *b)
 {
 	int temp;
@@ -10,12 +11,10 @@ void swap(int *a, int *b)
 
 void bubblesort(int *begin, const int *end)
 {
-  for(int i = 1; i < 1999; i++)
-  {
-    for(int j = 0; j < 1999 - i; j++)
-    {
-      if (*(begin+j) > *(begin+j+1))
-        swap((begin+j),(begin+j+1));
-    }
-  }
+	for (int *i = begin; i != end; i++)
+		for (int *j = (i + 1); j != end; j++)
+		{
+			if (*i > *j)
+				swap(i,j);
+		}
 }
